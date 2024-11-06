@@ -1,0 +1,58 @@
+/* RideCard.css */
+
+/* General Card Styling */
+.ride-card {
+    background: rgba(255, 255, 255, 0.9); /* Light background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+    margin: 15px auto; /* Space between cards */
+    width: 70%; /* Max width for cards */
+}
+
+/* Hover Effect */
+.ride-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Heading Styles */
+.ride-card h3 {
+    font-size: 1.5rem;
+    color: #FF6B6B; /* Coral Pink */
+    margin: 0 0 10px; /* Bottom margin */
+}
+
+/* Paragraph Styles */
+.ride-card p {
+    font-size: 0.9rem;
+    color: #333333; /* Dark gray text */
+    margin: 5px 0; /* Spacing between paragraphs */
+}
+
+/* Button Styles */
+.view-button {
+    background: linear-gradient(90deg, #4ECDC4, #007bff); /* Gradient background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 15px; /* Padding */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease, transform 0.3s ease; /* Transition effects */
+}
+
+/* Button Hover Effect */
+.view-button:hover {
+    background: linear-gradient(90deg, #0056b3, #3B9B91); /* Darker gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .ride-card {
+        width: 100%; /* Full width on small screens */
+        margin: 10px 0; /* Reduced margin on small screens */
+    }
+}

@@ -1,0 +1,30 @@
+/* Navbar.css */
+
+.navbar {
+    background-color: #8ae4d6; /* Navbar background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.navbar-item {
+    background-color: #f6a88b; /* Button color */
+    color: black;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+/* Styling the Link elements within navbar-item */
+.navbar-item a {
+    color: inherit; /* Inherit color from parent .navbar-item */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar-item:hover {
+    background-color: #e6977d; /* Slightly darker shade on hover */
+}

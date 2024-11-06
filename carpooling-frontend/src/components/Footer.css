@@ -1,0 +1,31 @@
+/* Footer.css */
+
+.footer {
+    padding: 20px;
+    background-color: #F6A88B; /* Adjust the color to match your design */
+    color: #d61818;
+    text-align: center;
+    margin-top: 0;
+    border-top: rgb(255, 255, 255) 5px solid;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #d61818;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #F6A88B; /* Accent color */
+}

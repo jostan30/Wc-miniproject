@@ -1,0 +1,124 @@
+/* Login.css */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* General body styling */
+*{
+    
+        font-family: "Lilita One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      
+}
+body {
+    background-color: #f5f7fa; /* Fallback color */
+    background-image: url(); /* Replace with your image path */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean, modern font */
+    height: 100vh; /* Full height of the viewport */
+}
+
+#root {
+    background: linear-gradient(to bottom,  #8ae4d6, #ffffff);
+        height: 800px;
+}
+
+/* Container styling */
+.login-container {
+    max-width: 400px; /* Max width for the container */
+    margin: 100px auto; /* Center the container */
+    padding: 30px; /* Padding around the content */
+    background: linear-gradient(to top, #F6A88B, #ffffff); /* Slightly transparent white background for better readability */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Heading styling */
+h1 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333; /* Dark grey color for contrast */
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 20px;
+    align-self: center;
+    width: 200px; /* Space between input groups */
+}
+
+/* Label styling */
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below the label */
+    font-weight: 600; /* Bold labels for emphasis */
+    color: #666; /* Slightly lighter grey for labels */
+}
+
+/* Input field styling */
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Full width of the container */
+    padding: 12px; /* Padding inside the input */
+    border: 2px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Font size for input text */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Input focus styling */
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+.login-container form {
+
+    border-top:black 2px solid;
+}
+.top30 {
+    margin-top: 30px;
+}
+/* Button styling */
+
+.b1 {
+    width: 100%; /* Full width for the button */
+    padding: 12px; /* Padding inside the button */
+    background-color: #007bff; /* Blue background color */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth transitions */
+}
+
+/* Button hover styling */
+.b1:hover {
+    background-color: #0056b3; /* Darker blue shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Button disabled styling */
+.b1:disabled {
+    background-color: #a0a0a0; /* Grey for disabled button */
+    cursor: not-allowed; /* Not allowed cursor for disabled */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .login-container {
+        margin: 50px 20px; /* Reduced margins on small screens */
+        padding: 20px; /* Reduced padding on small screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Slightly smaller heading */
+    }
+
+    button {
+        font-size: 14px; /* Smaller button text */
+    }
+}

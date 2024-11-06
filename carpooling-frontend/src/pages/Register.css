@@ -1,0 +1,115 @@
+/* Register.css */
+
+/* General body styling */
+body {
+    background-color: #f5f7fa; /* Light grey background for a soft look */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean, modern font */
+}
+
+#root {
+    background-color: #8ae4d6;
+    height: 800px;
+}
+
+.top30 {
+    margin-top: 30px;
+}
+.register-container form {
+    border-top:black 2px solid;
+}
+
+
+/* Container styling */
+.register-container {
+   
+    max-width: 400px; /* Max width for the container */
+    margin: 100px auto; /* Center the container */
+    padding: 30px; /* Padding around the content */
+    background: linear-gradient(to top, #F6A88B, #ffffff); /* White background for the form */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Heading styling */
+h1 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    color: #333; /* Dark grey color for contrast */
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 20px;
+    align-self: center;
+    width: 70%; /* Space between input groups */
+}
+
+/* Label styling */
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below the label */
+    font-weight: 600; /* Bold labels for emphasis */
+    color: #666; /* Slightly lighter grey for labels */
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Full width of the container */
+    padding: 12px; /* Padding inside the input */
+    border: 2px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Font size for input text */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Input focus styling */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styling */
+.b1 {
+    width: 100%; /* Full width for the button */
+    padding: 12px; /* Padding inside the button */
+    background-color: #007bff; /* Blue background color */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.2s; /* Smooth transitions */
+}
+
+/* Button hover styling */
+.b1:hover {
+    background-color: #0056b3; /* Darker blue shade on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Error message styling */
+.error-message {
+    color: red; /* Red color for error messages */
+    text-align: center; /* Center the error message */
+    margin-top: 10px; /* Space above the error message */
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .register-container {
+        margin: 50px 20px; /* Reduced margins on small screens */
+        padding: 20px; /* Reduced padding on small screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Slightly smaller heading */
+    }
+
+    button {
+        font-size: 14px; /* Smaller button text */
+    }
+}

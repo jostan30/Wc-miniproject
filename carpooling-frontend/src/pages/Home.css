@@ -1,0 +1,121 @@
+/* Home.css */
+
+.home-page {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('/bg-img.png') no-repeat center center/cover; /* Update with your image path */
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    background-color:#FFED00;
+    border-radius:50px;
+}
+
+
+
+/* Intro Section */
+.intro-section {
+    padding: 40px 20px;
+    background: linear-gradient(to bottom, #F6A88B, #ffffff);
+    text-align: center;
+}
+
+.intro-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.intro-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Feature Cards */
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+.feature-card i {
+    font-size: 2rem;
+    color: #4CAF50; /* Change color based on your branding */
+    margin-bottom: 10px;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.feature-card p {
+    font-size: 1rem;
+}
+.feature-card img {
+    width: 80%;
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+}
+
+/* Available Rides Section */
+.available-rides {
+    padding: 40px 20px;
+    background-color: #ffffff; /* Keep this solid to match the end of the gradient */
+    background: linear-gradient(to top, #F6A88B, #ffffff);
+    text-align: center;
+}
+
+.available-rides h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.loading-text {
+    font-size: 1.2rem;
+    color: #888;
+}
+
+.no-rides {
+    font-size: 1.2rem;
+    color: #ff5722; /* Highlight color for the no rides message */
+}
+
+.ride-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ride-list li {
+    margin: 15px 0;
+}
