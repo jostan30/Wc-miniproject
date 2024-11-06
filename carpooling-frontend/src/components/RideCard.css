@@ -1,58 +1,116 @@
 /* RideCard.css */
 
-/* General Card Styling */
 .ride-card {
-    background: rgba(255, 255, 255, 0.9); /* Light background */
-    border-radius: 12px; /* Rounded corners */
-    padding: 20px; /* Inner padding */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
-    margin: 15px auto; /* Space between cards */
-    width: 70%; /* Max width for cards */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover Effect */
-.ride-card:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* Heading Styles */
-.ride-card h3 {
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure modal is above other content */
+}
+
+/* Modal content */
+.modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px; /* Responsive width */
+    position: relative;
+}
+
+/* Modal header */
+.modal h3 {
+    margin-bottom: 20px;
     font-size: 1.5rem;
-    color: #FF6B6B; /* Coral Pink */
-    margin: 0 0 10px; /* Bottom margin */
+    color: #333;
 }
 
-/* Paragraph Styles */
-.ride-card p {
-    font-size: 0.9rem;
-    color: #333333; /* Dark gray text */
-    margin: 5px 0; /* Spacing between paragraphs */
+/* Modal text content */
+.modal p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
 }
 
-/* Button Styles */
-.view-button {
-    background: linear-gradient(90deg, #4ECDC4, #007bff); /* Gradient background */
-    color: white; /* White text */
-    border: none; /* No border */
-    border-radius: 8px; /* Rounded corners */
-    padding: 10px 15px; /* Padding */
-    font-size: 1rem; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background 0.3s ease, transform 0.3s ease; /* Transition effects */
+/* Button styling inside modal */
+.modal button {
+    background-color: #dc3545; /* Red for close button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
 }
 
-/* Button Hover Effect */
-.view-button:hover {
-    background: linear-gradient(90deg, #0056b3, #3B9B91); /* Darker gradient on hover */
-    transform: scale(1.05); /* Slightly enlarge button on hover */
+.modal button:hover {
+    background-color: #c82333;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .ride-card {
-        width: 100%; /* Full width on small screens */
-        margin: 10px 0; /* Reduced margin on small screens */
+/* Map container inside the modal (small square) */
+.modal .map-container {
+    margin-left: 175px;
+    height: 250px;  /* Set the height of the map */
+    width: 250px;   /* Set the width of the map to make it square */
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: #f4f4f4;  /* Background color for map container */
+    overflow: hidden;  /* Ensures that map doesn't overflow outside the square container */
+}
+
+
+
+.leaflet-container {
+    height: 300px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional responsiveness */
+@media (max-width: 600px) {
+    .modal {
+        width: 95%; /* Make the modal take more space on small screens */
+    }
+
+    .modal h3 {
+        font-size: 1.2rem;
+    }
+
+    .modal p {
+        font-size: 0.9rem;
     }
 }

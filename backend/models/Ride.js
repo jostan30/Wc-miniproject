@@ -18,10 +18,6 @@ const rideSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  days: {
-    type: [String], // e.g., ['Monday', 'Wednesday']
-    required: true,
-  },
   description: {
     type: String,
   },

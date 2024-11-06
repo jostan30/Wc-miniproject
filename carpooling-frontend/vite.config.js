@@ -1,7 +1,16 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-})
+  server: {
+    proxy: {
+      '/apiip': {
+        target: 'https://apiip.net',
+        changeOrigin: true,
+        secure: false,  // You might want to set this to true if the target uses SSL correctly
+        logLevel: 'debug',  // Add this to see detailed proxy logs
+      },
+    },
+  },
+});
